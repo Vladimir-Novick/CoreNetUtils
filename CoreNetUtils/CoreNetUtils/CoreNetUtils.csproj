@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Vladimir Novick ( http://www.linkedin/in/vldimirnovick )</Authors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>E:\development\Core2\CoreNetUtils\CoreNetUtils\CoreNetUtils.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>

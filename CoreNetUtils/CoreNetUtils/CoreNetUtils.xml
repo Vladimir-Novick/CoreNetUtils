@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CoreNetUtils</name>
+    </assembly>
+    <members>
+        <member name="M:CoreNetUtils.CoreNetTester.IsAvailableNetworkActive">
+            <summary>
+             1) recognizes changes related to Internet adapters
+             2) check all adapters -- filter by opstatus and activity
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoreNetUtils.CoreNetTester.Ping(System.String)">
+            <summary>
+                Ping address
+            </summary>
+            <param name="Address"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreNetUtils.CoreNetTester.WaitUnreachable(System.String,System.Int32,System.Int32)">
+            <summary>
+              Waiting while Network unreachable
+            </summary>
+            <param name="deltaTime"> default: 10 sec ( 10000 ) </param>
+            
+            <param name="maxTime"> max time (ms) default: 0 - not exist  </param>
+            <returns>true - OK</returns>
+        </member>
+        <member name="F:CoreNetUtils.PingStatus.Status">
+            <summary>
+               Reports the status of sending an Internet Control Message Protocol (ICMP) echo  message to a computer.
+            </summary>
+        </member>
+        <member name="P:CoreNetUtils.PingStatus.Address">
+            <summary>
+               Gets the address of the host that sends the Internet Control Message Protocol
+               
+            </summary>
+        </member>
+        <member name="P:CoreNetUtils.PingStatus.RoundTrip">
+            <summary>
+               Gets the number of milliseconds taken to send an Internet Control Message Protocol
+            </summary>
+        </member>
+        <member name="P:CoreNetUtils.PingStatus.Ttl">
+            <summary>
+              Gets or sets the number of routing nodes that can forward the System.Net.NetworkInformation.Ping
+              An System.Int32 value that specifies the number of times the System.Net.NetworkInformation.Ping 
+              data packets can be forwarded. The default is 128.
+            </summary>
+        </member>
+        <member name="P:CoreNetUtils.PingStatus.Host">
+            <summary>
+               Gets the address of the host that sends the Internet Control Message Protocol
+            </summary>
+        </member>
+    </members>
+</doc>
